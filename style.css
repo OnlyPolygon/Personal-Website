@@ -1,0 +1,208 @@
+html {
+  scroll-behavior: smooth;
+}
+nav.container-fluid {
+  max-width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--background-color, #fff);
+  transition: transform 0.3s ease-in-out;
+}
+nav.container-fluid ul li img,
+nav.container-fluid ul li svg {
+  display: block;
+}
+nav a {
+  font-weight: bold;
+  color: #2aabe2;
+}
+nav a:hover {
+  color: #8bd7ee;
+  text-decoration: none;
+}
+.logo {
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+nav.container-fluid.hidden {
+  transform: translateY(-100%);
+}
+.landing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 50vh;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.landing img {
+  max-width: 100%;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 1rem;
+  flex: 1 1 300px;
+}
+.landing-text {
+  max-width: 600px;
+  flex: 1 1 300px;
+}
+.sub-header {
+  margin-bottom: 0px;
+  padding-top: 70px;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+.card-grid article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  height: 70%;
+}
+.card-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+.price {
+  color: #20BF55;
+}
+article header {
+  margin-bottom: 20px;
+}
+article header h3 {
+  margin-bottom: 0px;
+  text-align: center;
+}
+.asset-thumb {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  padding-bottom: 20px;
+  border-radius: 0.5rem;
+}
+.modal-top {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal-top p {
+  text-align: center;
+}
+.modal-content {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+dialog {
+  max-width: 1200px;
+  width: 95%;
+}
+dialog article p {
+  margin-bottom: 0rem;
+}
+dialog article p strong {
+  font-weight: bolder;
+}
+dialog footer {
+  padding: 0.25rem 1rem; /* Reduced vertical padding */
+  font-size: 0.85rem;
+}
+
+dialog footer button {
+  padding: 0.25rem 0.5rem; /* Smaller button */
+  font-size: 0.8rem;
+}
+.install-options {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+.install-option {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  height: 100%; /* Optional: ensures consistent height */
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+.install-option p {
+  flex-grow: 1;
+  padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.install-step {
+  margin-top: 1rem;
+  display: none;
+}
+#layout-options,
+#layout-options-2 {
+  display: flex;
+  gap: 1rem; /* adds space between options */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+code {
+  color:#2aabe2;
+  background-color: #25263b;
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 4px 0;
+}
+#nav-links {
+  display: flex;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  dialog article {
+    max-width: 900px;
+  }
+}
+@media (max-width: 768px) {
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  #nav-links.show {
+    display: flex;
+  }
+  .hamburger {
+    display: block;
+  }
+}
