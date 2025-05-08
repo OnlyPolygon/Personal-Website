@@ -25,7 +25,7 @@ function resetInstallUI() {
             <button onclick="selectLayout('stacked')">Stacked Layout</button>
           </div>
           <div id="inline" style="flex: 1;">
-            <img src="img/phasmo_inline.png" alt="Inline layout">
+            <img src="img/phasmo_inline.PNG" alt="Inline layout">
             <button onclick="selectLayout('inline')">Inline Layout</button>
           </div>`;
 
@@ -200,11 +200,11 @@ function resetInstallUI2() {
   document.getElementById("layout-options-2").style.display = "none";
   document.getElementById("layout-options-2").innerHTML = `
           <div id="stacked2" style="flex: 1;">
-            <img src="img/demon_stack.png" alt="Stacked layout">
+            <img src="img/demon_stack.PNG" alt="Stacked layout">
             <button onclick="selectLayout2('stacked2')">Stacked Layout</button>
           </div>
           <div id="inline2" style="flex: 1;">
-            <img src="img/demon_inline.png" alt="Inline layout">
+            <img src="img/demon_inline.PNG" alt="Inline layout">
             <button onclick="selectLayout2('inline2')">Inline Layout</button>
           </div>`;
 
