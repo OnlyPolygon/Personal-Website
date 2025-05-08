@@ -133,9 +133,9 @@
         <header>
           <h3>Audio Consultation — <span class="price">$20</span></h3>
         </header>
-        <div class="modal-content">
+        <div class="modal-content" style="display: flex; gap: 1rem; flex-wrap: wrap">
           <!-- Left: YouTube Video -->
-          <div style="flex: 1; min-width: 300px">
+          <div style="flex: 1; min-width: 300px; display: flex; align-items: center; justify-content: center; background: #111; border-radius: 0.5rem; color: #888; height: 535px;">
             <iframe
               width="100%"
               height="535px"
@@ -147,7 +147,7 @@
             ></iframe>
           </div>
           <!-- Right: Instructions -->
-          <div style="flex: 2; padding-left: 1rem">
+          <div style="flex: 2; padding-left: 1rem; overflow-y: auto; max-height: 65vh">
             <h4>Description</h4>
             <p>
               I will create a custom audio FX chain for your microphone to
@@ -198,7 +198,7 @@
                 <li>Save as either <code>.mkv</code> or <code>.mp4</code>.</li>
               </ul>
             </ul>
-            <!-- ✅ Request Button -->
+            <!-- Request Button -->
             <div style="margin-top: 2rem">
               <a
                 href="https://ko-fi.com/c/f83c7feec4"
@@ -211,7 +211,7 @@
             </div>
           </div>
         </div>
-        <footer>
+        <footer style="margin-top: 20px">
           <button data-close-modal style="margin-bottom: 0px">Close</button>
         </footer>
       </article>
@@ -220,10 +220,69 @@
     <dialog id="modal-streamer">
       <article style="margin-top: 0px; margin-bottom: 0px">
         <header>
-          <h3>Streamer.bot C# Actions — <span class="price">$5+</span></h3>
+          <h3>Streamer.bot C# Actions — <span class="price">from $5</span></h3>
         </header>
-        <p>Includes examples and dynamic logic for advanced stream control.</p>
-        <footer>
+        <div class="modal-content" style="display: flex; gap: 1rem; flex-wrap: wrap">
+          <!-- Left: Placeholder or future media (optional) -->
+          <div style="flex: 1; min-width: 300px; display: flex; align-items: center; justify-content: center; background: #111; border-radius: 0.5rem; color: #888; height: 535px;">
+            <p style="text-align: center;">Media preview coming soon</p>
+          </div>
+    
+          <!-- Right: Info -->
+          <div style="flex: 2; padding-left: 1rem; overflow-y: auto; max-height: 65vh">
+            <h4>Description:</h4>
+            <p>
+              Want powerful custom Streamer.bot actions without writing C# yourself? I’ll build exactly what you need—whether it’s a simple trigger, a chat effect, or a flexible system that interacts with your browser source.
+            </p>
+    
+            <h4>What You Get:</h4>
+            <ul>
+              <li>A fully custom C# action for Streamer.bot</li>
+              <li>Clean, readable code with comments</li>
+              <li>Basic instructions for setup</li>
+              <li>Minimum one round of revisions to fine-tune it</li>
+              <li>More complex projects will get more feedback/revision opportunities</li>
+            </ul>
+    
+            <p><strong>Pricing</strong></p>
+            <ul>
+              <li>Base Rate: Starts at <span class="price">$5</span> for a simple action</li>
+              <li>Add-ons available:
+                <ul>
+                  <li><span class="price">$10</span> - WebSocket interaction</li>
+                  <li><span class="price">$10</span> - Browser Source Control (e.g. goal tracking)</li>
+
+                  <li><span class="price">$20</span> - API integrations</li>
+                  <li><span class="price">$15</span> - Rush delivery</li>
+                </ul>
+              </li>
+            </ul>
+            <small><strong>Note:</strong> Final price will vary based on the complexity of your request. Let’s talk through your idea and I’ll give you a fair, custom quote.</small>
+            <br />
+            <br />
+            <p><strong>Ideal for:</strong></p>
+            <ul>
+              <li>Twitch streamers wanting unique chat commands</li>
+              <li>VTubers with interactive overlays</li>
+              <li>Anyone using Streamer.bot for fun automation</li>
+            </ul>
+            <p>Let me handle the code so you can focus on creating an awesome stream experience.</p>
+    
+            <!-- CTA Button -->
+            <div style="margin-top: 2rem">
+              <a
+                href="https://ko-fi.com/c/f83c7feec4"
+                target="_blank"
+                class="contrast"
+                role="button"
+                style="width: 100%"
+              >
+              <strong>Request this service</strong>
+              </a>
+            </div>
+          </div>
+        </div>
+        <footer style="margin-top: 20px">
           <button data-close-modal style="margin-bottom: 0px">Close</button>
         </footer>
       </article>
@@ -317,7 +376,7 @@
             />
         </a>
     
-        <!-- Email (Inline SVG Icon) -->
+        <!-- Email -->
         <a href="mailto:onlypolygon@gmail.com" aria-label="Email">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="#2aabe2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
